@@ -1,15 +1,15 @@
 extends layout
 
 block content
-  div(class="analytics-page")
-    h1 Analytics
-    table
-        thead 
-            tr
-                th(class="text-left") Path
-                th Visits
-        tbody
-            each pageView in pageViews
+    div(class="analytics-page")
+        h1 Analytics
+        table
+            thead 
                 tr
-                    td= pageView._id
-                    td(class="text-center")= pageView.visits
+                    th(class="text-left") Path
+                    th Visits
+            tbody
+                each pageView in pageViews
+                    tr
+                        td= pageView._id
+                        td(class="text-center")= pageView.visits
