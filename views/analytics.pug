@@ -9,10 +9,10 @@ block content
                     th(class="text-left") Path
                     th Visits
             tbody
+                tr
+                    td
+                    td
                 each pageView in pageViews
-                    tr
-                        td
-                        td
                     tr
                         td= pageView._id
                         td(class="text-center")= pageView.visits
