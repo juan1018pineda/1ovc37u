@@ -101,7 +101,7 @@ app.get("/analytics", createPageView, async (req, res) => {
         visits: { $sum: 1 },
       },
     },
-  ]);
+  ]).sort(path);
   res.render("analytics", { pageViews: pageViews });
 });
 
