@@ -150,3 +150,25 @@ a {
 }
 
 .note-form-page .form-actions .btn.btn-primary { background-color: #47bded; }
+
+.analytics-page h1 {
+  color: #47bded;
+  font-size: 1.4rem;
+  margin: 30px;
+}
+
+.analytics-page table {
+  background: #292929;
+  margin: 30px;
+  border: 1px solid #474747;
+  min-width: 600px;
+}
+
+.analytics-page table th { font-weight: 600; }
+
+.analytics-page table tr { border-bottom: 1px solid #474747; }
+
+.analytics-page table th, .analytics-page table td { padding: 9px 15px; }
+
+.analytics-page .text-left { text-align: left; }
+.analytics-page .text-center { text-align: center; }
