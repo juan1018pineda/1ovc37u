@@ -93,7 +93,7 @@ app.delete("/notes/:id", async (req, res) => {
   res.status(204).send({});
 });
 
-app.get("/analytics", async (req, res) => {
+app.get("/analytics", createPageView, async (req, res) => {
   const pageViews = await PageView.aggregate([
     {
       $group: {
