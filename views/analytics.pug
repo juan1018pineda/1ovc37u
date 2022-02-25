@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 Analytics
+    table 
+        thead 
+            th Path
+            th Visits
+        tbody
+        each view in pageViews
+            tr
+                td= view._id
+                td= view.visits  

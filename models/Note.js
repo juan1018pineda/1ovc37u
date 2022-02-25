@@ -10,4 +10,5 @@ NoteSchema.methods.truncateBody = function() {
   }
   return this.body;
 };
+
 module.exports = mongoose.model("Note", NoteSchema);
