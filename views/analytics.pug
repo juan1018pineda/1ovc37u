@@ -7,8 +7,8 @@ block content
         tr
           th(class="text-left") Path
           th Visits
-      tbody
-        each pageView in pageViews
-          tr
-            td= pageView._id
-            td(class="text-center")= pageView.visits
+        tbody
+            each pageView in pageViews
+                tr
+                    td= pageView._id
+                    td(class="text-center")= pageView.visits
